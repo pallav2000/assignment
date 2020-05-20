@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html dir="ltr" lang=en>
+
+    <head >
+        <title>"this is my first form page"</title>
+        <style>
+            body {font-family: Arial, Helvetica, sans-serif;}
+            * {box-sizing: border-box}
+            
+            
+            hr {
+              border: 1px solid black;
+              margin-bottom: 25px;
+            }
+            
+            /* Set a style for all buttons */
+            button {
+              background-color: black;
+              color: white;
+              padding: 14px 20px;
+              margin: 8px 0;
+              border: white;
+              cursor: pointer;
+              width: 100%;
+              opacity: 0.9;
+            }
+            
+            button:hover {
+              opacity:1;
+            }
+            
+           
+            
+            
+            /* Float cancel and signup buttons and add an equal width */
+           
+            
+            /* Add padding to container elements */
+            .container {
+              padding: 16px;
+            }
+            
+            /* Clear floats */
+            .clearfix::after {
+              content: "";
+              clear: both;
+              display: table;
+            }
+            
+            /* Change styles for cancel button and signup button on extra small screens */
+            @media screen and (max-width: 300px) {
+              .cancelbtn, .signupbtn {
+                 width: 100%;
+              }
+            }
+            </style>
+    </head>
+    <body background="./html-color-codes-color-tutorials-hero-00e10b1f.jpg">
+            <h1>please fill the signup form form</h1>
+            <!--form attribut   method and action-->
+            <form action="./sport.html">
+                <lable for="fname">enter your father's name</lable>
+                <input type="text" name="fname" value="your name"  required><br>
+                <label for="username">EMAIL</label>
+                <input type="email"name="username" required><br>
+                <label for="phone">mobile number</label>
+                <input type="tel" id="phone" required><br>
+                <label for="password">create a password</label>
+                <input type="password" name="password" required><br>
+                <button type="button" class="cancelbtn">Cancel</button><br>
+                <button onclick="./sport.html">signup</button>
+            
+         
+            </form>      
+
+    </body>
+</html>
